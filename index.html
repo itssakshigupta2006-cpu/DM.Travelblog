@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover India through historic cities, spiritual journeys, Himalayan escapes, and beautiful beaches.">
+  <meta name="keywords" content="India travel, India travel destinations, historical places in India, spiritual places in India, Indian Himalayas, beaches in India">
+  <meta name="theme-color" content="#173c34">
+  <title>Wayfarer | Find Your Next Journey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #182923;
+      --muted: #627269;
+      --paper: #fbfaf5;
+      --canvas: #e8eee7;
+      --line: #d8dfd6;
+      --green: #173c34;
+      --green-bright: #b5d96f;
+      --coral: #d76b4c;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .topline { height: 7px; background: var(--green-bright); }
+    .site-header {
+      background: var(--green);
+      color: var(--paper);
+    }
+    .nav-wrap {
+      width: min(1180px, calc(100% - 48px));
+      height: 76px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: inherit;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(251, 250, 245, .5);
+      border-radius: 50%;
+      color: var(--green-bright);
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 600;
+    }
+    .nav-links { display: flex; gap: 31px; align-items: center; }
+    .nav-links a {
+      color: #e0e8df;
+      font-size: 12px;
+      text-decoration: none;
+    }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--green-bright); }
+    .header-note {
+      color: #c2d2c8;
+      font-size: 11px;
+      letter-spacing: .04em;
+    }
+
+    main { padding: 52px 24px 80px; }
+    .page { width: min(1080px, 100%); margin: 0 auto; }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 20px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--coral); }
+    .headline-row {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 32px;
+      margin-bottom: 28px;
+    }
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(44px, 6vw, 76px);
+      font-weight: 500;
+      line-height: 1.02;
+    }
+    .headline-aside {
+      max-width: 235px;
+      margin-bottom: 7px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    figure { margin: 0; }
+    .hero-image {
+      display: block;
+      width: 100%;
+      height: clamp(280px, 44vw, 500px);
+      object-fit: cover;
+      object-position: center 52%;
+      background: #b2c4b5;
+    }
+    figcaption {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+    }
+    figcaption a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .article-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 680px) 260px;
+      justify-content: space-between;
+      gap: 64px;
+      padding-top: 47px;
+    }
+    .byline {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .author-mark {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #d7e1cb;
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 16px;
+    }
+    .byline strong { color: var(--ink); font-weight: 600; }
+    .byline .dot { color: var(--coral); }
+    .article-body { font-size: 16px; line-height: 1.85; }
+    .article-body p { margin: 22px 0; }
+    .article-body .lead {
+      margin-top: 25px;
+      font-family: var(--serif);
+      font-size: 23px;
+      line-height: 1.55;
+    }
+    .article-body h2 {
+      margin: 43px 0 10px;
+      font-family: var(--serif);
+      font-size: 31px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+    .article-body a { color: #315f4e; text-decoration-color: #90a999; text-underline-offset: 3px; }
+    .article-body a:hover { color: var(--coral); }
+    .pullquote {
+      margin: 34px 0;
+      padding: 4px 0 4px 22px;
+      border-left: 3px solid var(--coral);
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1.5;
+    }
+    .article-body ul { padding-left: 21px; }
+    .article-body li { padding-left: 4px; margin: 8px 0; }
+    .article-body li::marker { color: var(--coral); }
+    .sidebar { padding-top: 3px; }
+    .side-block { padding: 0 0 25px; margin: 0 0 25px; border-bottom: 1px solid var(--line); }
+    .side-label {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .contents { display: grid; gap: 11px; }
+    .contents a {
+      color: var(--ink);
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .contents a:hover { color: var(--coral); }
+    .trip-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 17px 12px; }
+    .fact strong { display: block; color: var(--green); font-family: var(--serif); font-size: 20px; font-weight: 500; }
+    .fact span { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; line-height: 1.4; }
+    .keyword-list { display: flex; flex-wrap: wrap; gap: 7px; }
+    .keyword-list span {
+      padding: 6px 9px;
+      border: 1px solid #c9d5c9;
+      border-radius: 2px;
+      color: #3c584a;
+      font-size: 10px;
+      line-height: 1.2;
+    }
+    .wiki-note { color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .wiki-note a { color: var(--green); text-underline-offset: 3px; }
+    .end-mark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 40px;
+      color: var(--coral);
+      font-family: var(--serif);
+      font-size: 22px;
+    }
+    .end-mark::after { content: ""; width: 54px; height: 1px; background: var(--line); }
+    footer {
+      padding: 23px 24px;
+      background: var(--green);
+      color: #d7e1da;
+      text-align: center;
+      font-size: 11px;
+    }
+
+    @media (max-width: 760px) {
+      .nav-wrap { width: min(100% - 36px, 600px); height: 68px; }
+      .header-note, .nav-links a:nth-child(2) { display: none; }
+      .nav-links { gap: 20px; }
+      main { padding: 37px 18px 56px; }
+      .headline-row { display: block; margin-bottom: 22px; }
+      h1 { max-width: 560px; font-size: clamp(44px, 12vw, 68px); }
+      .headline-aside { max-width: 410px; margin-top: 14px; }
+      .hero-image { height: 58vw; min-height: 245px; max-height: 390px; }
+      .article-grid { grid-template-columns: 1fr; gap: 40px; padding-top: 32px; }
+      .sidebar { display: grid; grid-template-columns: 1fr 1fr; gap: 23px 18px; }
+      .side-block { margin: 0; }
+    }
+    @media (max-width: 440px) {
+      .nav-links { gap: 14px; }
+      .nav-links a { font-size: 11px; }
+      .brand { gap: 8px; font-size: 11px; }
+      .headline-aside { font-size: 13px; }
+      .article-body { font-size: 15px; }
+      .article-body .lead { font-size: 21px; }
+      .sidebar { grid-template-columns: 1fr; }
+      figcaption { font-size: 10px; }
+    }
+
+    [hidden] { display: none !important; }
+    body { background: #f2f3ed; }
+    .auth-screen {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(360px, .9fr) minmax(420px, 1.1fr);
+      background: #eaf8f5;
+    }
+    .auth-main {
+      position: relative; isolation: isolate; display: flex; flex-direction: column; overflow: hidden;
+      padding: 34px clamp(28px, 6vw, 90px);
+      background-color: #eaf8f5;
+      background-image: linear-gradient(135deg, rgba(64, 180, 164, .09), transparent 48%), repeating-linear-gradient(0deg, transparent 0 39px, rgba(26, 128, 119, .035) 40px);
+    }
+    .auth-main > * { position: relative; z-index: 1; }
+    .auth-main .wayfarer-brand { display: inline-flex; align-items: center; gap: 11px; color: #075e5b; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .auth-main .brand-mark { border-color: #168b82; background: rgba(255, 255, 255, .54); color: #087b75; }
+    .auth-content { width: min(100%, 390px); margin: auto; padding: 52px 0; }
+    .auth-kicker { margin: 0 0 14px; color: #087f78; font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+    .auth-content h1 { margin: 0; color: #123f3d; font-family: var(--serif); font-size: 54px; font-weight: 500; line-height: 1.06; }
+    .auth-copy { margin: 17px 0 24px; color: #547673; font-size: 14px; line-height: 1.75; }
+    .auth-form {
+      display: grid; gap: 16px; padding: 22px;
+      border: 1px solid #c2e2dc; background: rgba(255, 255, 255, .78);
+      box-shadow: 0 16px 38px rgba(13, 93, 86, .09);
+    }
+    .auth-main .field-label { display: grid; gap: 8px; color: #245a57; font-size: 12px; font-weight: 600; }
+    .auth-main .field-label input {
+      width: 100%; min-width: 0; height: 48px; padding: 0 13px;
+      border: 1px solid #c6ddd9; border-radius: 3px; background: #fbfffe;
+      color: #173f3d; font: 14px var(--sans); outline: none; transition: border-color .18s ease, box-shadow .18s ease;
+    }
+    .auth-main .field-label input:focus { border-color: #0c968b; box-shadow: 0 0 0 3px rgba(12, 150, 139, .15); }
+    .auth-submit {
+      min-height: 49px; margin-top: 4px; padding: 0 18px; border: 0; border-radius: 3px;
+      background: #07877f; color: white; font: 600 13px var(--sans); cursor: pointer;
+      box-shadow: 0 7px 16px rgba(7, 135, 127, .18); transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
+    }
+    .auth-submit:hover { transform: translateY(-1px); background: #056e69; box-shadow: 0 10px 20px rgba(7, 135, 127, .24); }
+    .auth-submit:focus-visible { outline: 3px solid #7bd8c7; outline-offset: 3px; }
+    .auth-message { min-height: 18px; margin: 0; color: #a54d47; font-size: 12px; }
+    .auth-disclaimer { margin: 16px 0 0; color: #5c7d79; font-size: 11px; line-height: 1.6; }
+    .auth-visual {
+      position: relative; display: flex; min-height: 100vh; align-items: end; overflow: hidden;
+      padding: 52px; color: #fff;
+      background: #073f42;
+    }
+    .visual-collage {
+      position: absolute; inset: 0; display: grid; z-index: 0;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      grid-template-rows: repeat(8, minmax(0, 1fr));
+      gap: 10px; padding: 16px;
+    }
+    .visual-collage img {
+      display: block; width: 100%; height: 100%; min-width: 0; min-height: 0;
+      border: 2px solid rgba(224, 255, 249, .82); object-fit: cover;
+      box-shadow: 0 8px 24px rgba(2, 34, 37, .24);
+    }
+    .visual-photo--ghats { grid-column: 1 / 6; grid-row: 1 / 7; }
+    .visual-photo--taj { grid-column: 6 / 9; grid-row: 1 / 4; }
+    .visual-photo--mountains { grid-column: 6 / 9; grid-row: 4 / 7; }
+    .visual-photo--coast { grid-column: 2 / 6; grid-row: 7 / 9; }
+    .visual-caption { position: relative; z-index: 1; max-width: 510px; padding-left: 22px; border-left: 2px solid #6be0c9; text-shadow: 0 1px 3px rgba(0, 28, 30, .75); }
+    .visual-caption p { margin: 0 0 12px; color: #9de9db; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .visual-caption h2 { margin: 0; font: 500 42px/1.18 var(--serif); }
+    .visual-caption span { display: block; margin-top: 13px; color: #d3eee9; font-size: 13px; }
+
+    .dashboard { min-height: 100vh; background: #f6f6f0; }
+    .dash-header { min-height: 76px; padding: 0 34px; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: var(--green); color: #f7f7ef; }
+    .dash-header .wayfarer-brand { color: #f7f7ef; }
+    .dash-header .brand-mark { border-color: rgba(255,255,255,.55); color: var(--green-bright); }
+    .dash-header-right { display: flex; align-items: center; gap: 22px; }
+    .search-field { display: flex; align-items: center; gap: 9px; width: min(300px, 32vw); color: #cad8cf; font-size: 15px; }
+    .search-field input { height: 38px; border-color: rgba(255,255,255,.25); background: rgba(255,255,255,.1); color: white; font-size: 12px; }
+    .search-field input::placeholder { color: #cfdbd3; }
+    .profile-area { display: flex; align-items: center; gap: 10px; white-space: nowrap; font-size: 12px; }
+    .profile-initial { display: grid; width: 31px; height: 31px; place-items: center; border-radius: 50%; background: var(--green-bright); color: var(--green); font-weight: 700; }
+    .signout-button { border: 0; padding: 8px 0; background: transparent; color: #e0e8df; font: 12px var(--sans); cursor: pointer; }
+    .signout-button:hover { color: var(--green-bright); }
+    .dash-layout { display: grid; grid-template-columns: 245px minmax(0, 1fr); min-height: calc(100vh - 76px); }
+    .dash-sidebar { padding: 35px 19px; border-right: 1px solid #dce1d8; background: #eff1e9; }
+    .sidebar-title { margin: 0 12px 15px; color: #77847c; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .category-nav { display: grid; gap: 5px; }
+    .category-button { width: 100%; min-height: 45px; display: flex; align-items: center; gap: 12px; padding: 0 12px; border: 0; border-radius: 2px; background: transparent; color: #40534a; text-align: left; font: 500 13px var(--sans); cursor: pointer; }
+    .category-button:hover { background: #e3e9df; }
+    .category-button[aria-pressed="true"] { background: var(--green); color: white; }
+    .category-symbol { width: 20px; color: #b05d43; text-align: center; font-size: 15px; }
+    .category-button[aria-pressed="true"] .category-symbol { color: var(--green-bright); }
+    .sidebar-note { margin: 37px 12px 0; padding-top: 18px; border-top: 1px solid #d6ddd4; color: #748078; font-size: 11px; line-height: 1.7; }
+    .dash-main { width: min(1240px, 100%); margin: 0 auto; padding: 45px clamp(24px, 5vw, 68px) 64px; }
+    .dash-topline { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 30px; }
+    .dash-main h1 { margin: 0; font: 500 42px/1.15 var(--serif); }
+    .dash-intro { max-width: 520px; margin: 10px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+    .results-count { flex: 0 0 auto; padding-bottom: 5px; color: #718078; font-size: 11px; }
+    .destination-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+    .destination-card { min-width: 0; background: #fff; }
+    .destination-image { display: block; width: 100%; aspect-ratio: 1.38 / 1; object-fit: cover; background: #c4d0c5; }
+    .destination-info { padding: 15px 16px 17px; }
+    .destination-type { margin: 0 0 6px; color: #a45139; font-size: 9px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .destination-info h2 { margin: 0; font: 500 23px/1.2 var(--serif); }
+    .destination-info p { min-height: 42px; margin: 8px 0 14px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+    .destination-link { display: inline-flex; align-items: center; gap: 6px; color: #285844; font-size: 11px; font-weight: 600; text-decoration: none; }
+    .destination-link:hover { color: #b04d35; text-decoration: underline; text-underline-offset: 3px; }
+    .empty-results { grid-column: 1 / -1; padding: 45px 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    @media (max-width: 900px) {
+      .auth-screen { grid-template-columns: 1fr 1fr; }
+      .auth-main { padding: 28px; }
+      .auth-visual { padding: 32px; }
+      .visual-caption h2 { font-size: 34px; }
+      .destination-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .dash-header { padding: 0 22px; }
+      .dash-layout { grid-template-columns: 205px minmax(0, 1fr); }
+      .dash-main { padding: 35px 25px 50px; }
+    }
+    @media (max-width: 640px) {
+      .auth-screen { display: flex; flex-direction: column; }
+      .auth-main { min-height: 100vh; padding: 24px; }
+      .auth-content { margin: auto; padding: 55px 0; }
+      .auth-content h1 { font-size: 46px; }
+      .auth-visual { min-height: 360px; padding: 28px; }
+      .dash-header { min-height: 68px; padding: 0 16px; }
+      .dash-header-right { gap: 12px; }
+      .search-field { width: 38px; }
+      .search-field input { width: 38px; padding: 0 9px; }
+      .search-field input:focus { position: absolute; top: 75px; left: 16px; z-index: 2; width: calc(100% - 32px); background: var(--green); }
+      .profile-name { display: none; }
+      .dash-layout { display: block; }
+      .dash-sidebar { padding: 13px 15px; border-right: 0; border-bottom: 1px solid #dce1d8; }
+      .sidebar-title, .sidebar-note { display: none; }
+      .category-nav { display: flex; gap: 6px; overflow-x: auto; }
+      .category-button { flex: 0 0 auto; width: auto; min-height: 39px; padding: 0 10px; font-size: 11px; }
+      .category-symbol { width: auto; }
+      .dash-main { padding: 30px 18px 45px; }
+      .dash-topline { display: block; margin-bottom: 23px; }
+      .dash-main h1 { font-size: 36px; }
+      .results-count { display: block; margin-top: 12px; }
+      .destination-grid { gap: 14px; }
+      .destination-info { padding: 12px; }
+      .destination-info h2 { font-size: 20px; }
+      .destination-info p { min-height: 58px; font-size: 10px; }
+    }
+    @media (max-width: 430px) {
+      .destination-grid { grid-template-columns: 1fr; }
+      .destination-image { aspect-ratio: 1.7 / 1; }
+      .destination-info p { min-height: 0; }
+      .dash-header .wayfarer-brand { font-size: 11px; }
+      .signout-button { font-size: 11px; }
+    }
+    .dash-tabs {
+      display: flex;
+      gap: 30px;
+      padding: 0 clamp(24px, 5vw, 68px);
+      border-bottom: 1px solid #dce1d8;
+      background: #f6f6f0;
+    }
+    .dash-tab {
+      min-height: 52px;
+      padding: 2px 1px 0;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: #6d7c72;
+      font: 500 12px var(--sans);
+      cursor: pointer;
+    }
+    .dash-tab[aria-selected="true"] { border-bottom-color: var(--coral); color: var(--green); font-weight: 700; }
+    .journal-main { width: min(1120px, 100%); margin: 0 auto; padding: 38px clamp(24px, 5vw, 68px) 70px; background: #f8f4fa; }
+    .journal-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 25px; }
+    .journal-heading h1 { margin: 0; font: 500 38px/1.15 var(--serif); }
+    .journal-heading p:last-child { max-width: 470px; margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.65; }
+    .journal-count { flex: 0 0 auto; padding-bottom: 4px; color: var(--muted); font-size: 11px; }
+    .journal-compose {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(250px, .72fr);
+      gap: 27px;
+      padding: 25px;
+      border: 1px solid #e6dceb;
+      background: #fffafd;
+      box-shadow: 0 8px 28px rgba(86, 64, 97, .06);
+    }
+    .journal-fields { display: grid; align-content: start; gap: 15px; }
+    .journal-fields h2 { margin: 0 0 2px; font: 500 24px/1.2 var(--serif); }
+    .journal-fields .field-label { gap: 7px; }
+    .journal-fields input:not([type="file"]), .journal-fields textarea {
+      width: 100%; min-width: 0; border: 1px solid #e2d9e8; border-radius: 2px;
+      background: #fffefe; color: var(--ink); font: 13px var(--sans); outline: none;
+    }
+    .journal-fields input:not([type="file"]) { height: 41px; padding: 0 11px; }
+    .journal-fields textarea { min-height: 112px; resize: vertical; padding: 10px 11px; line-height: 1.65; }
+    .journal-fields input:focus, .journal-fields textarea:focus { border-color: #a88db8; box-shadow: 0 0 0 3px rgba(168, 141, 184, .16); }
+    .journal-two-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .rating-label { display: block; margin-bottom: 7px; color: #34463d; font-size: 12px; font-weight: 600; }
+    .rating-control { display: flex; gap: 4px; }
+    .rating-star { padding: 2px 4px; border: 0; background: transparent; color: #d4c8db; font-size: 23px; line-height: 1; cursor: pointer; }
+    .rating-star[aria-pressed="true"], .rating-star.is-filled { color: #d2a35d; }
+    .rating-star:focus-visible, .sticker-remove:focus-visible, .delete-entry:focus-visible { outline: 2px solid #477b63; outline-offset: 2px; }
+    .photo-dropzone { min-height: 125px; display: grid; align-content: center; justify-items: center; gap: 8px; padding: 17px; border: 1px dashed #afd2c1; background: #edf7f1; text-align: center; }
+    .photo-dropzone strong { color: #426653; font: 500 19px var(--serif); }
+    .photo-dropzone span { color: var(--muted); font-size: 10px; }
+    .photo-picker { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
+    .photo-picker:focus-visible + .photo-pick-button { outline: 2px solid #7e9f8a; outline-offset: 2px; }
+    .photo-pick-button { min-height: 32px; padding: 0 12px; border: 1px solid #cbb9d5; border-radius: 2px; background: #f3eef8; color: #5e4b6d; font: 600 11px var(--sans); cursor: pointer; }
+    .photo-pick-button:hover { background: #ebe2f2; }
+    .sticker-tray { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+    .photo-sticker { position: relative; width: 82px; padding: 5px 5px 8px; background: #fff; box-shadow: 0 2px 9px rgba(31, 47, 37, .15); transform: rotate(-3deg); }
+    .photo-sticker:nth-child(even) { transform: rotate(3deg) translateY(4px); }
+    .photo-sticker img { display: block; width: 72px; height: 66px; object-fit: cover; background: #e5e9e2; }
+    .sticker-remove { position: absolute; top: -7px; right: -7px; width: 21px; height: 21px; border: 1px solid #e4e5df; border-radius: 50%; background: #fff; color: #713f32; font: 14px/1 var(--sans); cursor: pointer; }
+    .save-memory { min-height: 43px; justify-self: start; padding: 0 16px; border: 0; border-radius: 2px; background: #786487; color: #fff; font: 600 12px var(--sans); cursor: pointer; }
+    .save-memory:hover { background: #665575; }
+    .journal-status { min-height: 16px; margin: -7px 0 0; color: #9b4938; font-size: 11px; }
+    .journal-list-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin: 37px 0 16px; padding-bottom: 12px; border-bottom: 1px solid #e2d8e8; }
+    .journal-list-heading h2 { margin: 0; font: 500 26px var(--serif); }
+    .journal-list-heading span { color: var(--muted); font-size: 10px; }
+    .journal-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .journal-entry { min-width: 0; padding: 18px; border: 1px solid #e7dce9; background: #fffafd; }
+    .journal-entry:nth-child(3n + 2) { border-color: #e6d9cf; background: #fff8f1; }
+    .journal-entry:nth-child(3n) { border-color: #d8e7dd; background: #f5fbf7; }
+    .journal-entry-top { display: flex; justify-content: space-between; gap: 12px; }
+    .journal-entry h3 { margin: 0; font: 500 22px/1.2 var(--serif); }
+    .journal-entry-meta { margin: 6px 0 0; color: var(--muted); font-size: 10px; }
+    .journal-entry-rating { flex: 0 0 auto; color: #c2763d; font-size: 13px; letter-spacing: 1px; white-space: nowrap; }
+    .journal-review { margin: 14px 0 0; color: #405149; font-size: 12px; line-height: 1.75; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .journal-entry-stickers { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .journal-entry-stickers .photo-sticker { width: 106px; }
+    .journal-entry-stickers .photo-sticker img { width: 96px; height: 88px; }
+    .delete-entry { margin-top: 14px; padding: 5px 0; border: 0; background: transparent; color: #8b5342; font: 11px var(--sans); cursor: pointer; }
+    .delete-entry:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .journal-empty { grid-column: 1 / -1; padding: 30px 0; color: var(--muted); font-size: 12px; }
+    @media (max-width: 760px) {
+      .dash-tabs { gap: 23px; padding: 0 20px; }
+      .journal-main { padding: 30px 20px 50px; }
+      .journal-compose { grid-template-columns: 1fr; gap: 20px; padding: 19px; }
+      .journal-list { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 430px) {
+      .journal-main { padding: 26px 16px 42px; }
+      .journal-heading { display: block; }
+      .journal-heading h1 { font-size: 33px; }
+      .journal-count { display: inline-block; margin-top: 10px; }
+      .journal-two-fields { grid-template-columns: 1fr; }
+      .dash-tabs { gap: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <main id="loginView" class="auth-screen">
+    <section class="auth-main" aria-labelledby="loginTitle">
+      <a class="wayfarer-brand" href="#login" aria-label="Wayfarer home">
+        <span class="brand-mark" aria-hidden="true">w.</span>
+        <span>Wayfarer</span>
+      </a>
+      <div class="auth-content">
+        <p class="auth-kicker">Your next chapter starts here</p>
+        <h1 id="loginTitle">Find a place that feels like yours.</h1>
+        <p class="auth-copy">Sign in to explore India's historic places, spiritual centers, Himalayan escapes, and sunlit coasts.</p>
+        <form class="auth-form" id="loginForm">
+          <label class="field-label" for="email">Email address
+            <input id="email" name="email" type="email" autocomplete="username" placeholder="you@example.com" required>
+          </label>
+          <label class="field-label" for="password">Password
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+          </label>
+          <p class="auth-message" id="authMessage" role="status" aria-live="polite"></p>
+          <button class="auth-submit" type="submit">Sign in to Wayfarer <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="auth-disclaimer">Preview mode: sign-in is local to this browser and is not connected to an account service.</p>
+      </div>
+    </section>
+    <aside class="auth-visual" aria-label="Travel photography collage">
+      <div class="visual-collage" aria-hidden="true">
+        <img class="visual-photo--ghats" src="https://commons.wikimedia.org/wiki/Special:FilePath/DashashwamedhGhat-Varanasi_India-Andres_Larin.jpg?width=1600" alt="">
+        <img class="visual-photo--taj" src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=700&q=85" alt="">
+        <img class="visual-photo--mountains" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=85" alt="">
+        <img class="visual-photo--coast" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85" alt="">
+      </div>
+      <div class="visual-caption">
+        <p>India, beyond the expected</p>
+        <h2>A thousand journeys, one country.</h2>
+        <span>Thoughtful travel stories from across India.</span>
+      </div>
+    </aside>
+  </main>
+
+  <section class="dashboard" id="dashboardView" hidden>
+    <header class="dash-header">
+      <a class="wayfarer-brand" href="#dashboard" aria-label="Wayfarer dashboard">
+        <span class="brand-mark" aria-hidden="true">w.</span>
+        <span>Wayfarer</span>
+      </a>
+      <div class="dash-header-right">
+        <label class="search-field" aria-label="Search destinations">
+          <span aria-hidden="true">⌕</span>
+          <input id="destinationSearch" type="search" placeholder="Search a place or feeling..." autocomplete="off">
+        </label>
+        <div class="profile-area">
+          <span class="profile-initial" id="profileInitial">W</span>
+          <span class="profile-name" id="profileName">Wayfarer</span>
+        </div>
+        <button class="signout-button" id="signOutButton" type="button">Sign out</button>
+      </div>
+    </header>
+    <nav class="dash-tabs" role="tablist" aria-label="Dashboard sections">
+      <button class="dash-tab" id="discoverTab" type="button" role="tab" aria-selected="true" aria-controls="discoverPanel">Discover</button>
+      <button class="dash-tab" id="journalTab" type="button" role="tab" aria-selected="false" aria-controls="journalPanel">My Journal</button>
+    </nav>
+    <div class="dash-layout" id="discoverPanel" role="tabpanel" aria-labelledby="discoverTab" tabindex="0">
+      <aside class="dash-sidebar" aria-label="Travel categories">
+        <p class="sidebar-title">Choose your path</p>
+        <nav class="category-nav" id="categoryNav" aria-label="Destination categories">
+          <button class="category-button" type="button" data-category="all" aria-pressed="true"><span class="category-symbol" aria-hidden="true">✳</span>All journeys</button>
+          <button class="category-button" type="button" data-category="historical" aria-pressed="false"><span class="category-symbol" aria-hidden="true">⌂</span>Historical</button>
+          <button class="category-button" type="button" data-category="spiritual" aria-pressed="false"><span class="category-symbol" aria-hidden="true">✧</span>Spiritual</button>
+          <button class="category-button" type="button" data-category="mountains" aria-pressed="false"><span class="category-symbol" aria-hidden="true">⌃</span>Mountains</button>
+          <button class="category-button" type="button" data-category="beaches" aria-pressed="false"><span class="category-symbol" aria-hidden="true">≈</span>Beaches</button>
+        </nav>
+        <p class="sidebar-note">The best journeys leave room for a little wonder.</p>
+      </aside>
+      <main class="dash-main">
+        <div class="dash-topline">
+          <div>
+            <p class="dash-kicker">Discover India, one journey at a time</p>
+            <h1 id="dashboardTitle">Choose your next journey</h1>
+            <p class="dash-intro" id="dashboardIntro">From ancient stone cities to Himalayan trails and palm-lined shores, find an India that fits your way of travelling.</p>
+          </div>
+          <span class="results-count" id="resultsCount" aria-live="polite"></span>
+        </div>
+        <div class="destination-grid" id="destinationGrid" aria-live="polite"></div>
+      </main>
+    </div>
+    <section class="journal-main" id="journalPanel" role="tabpanel" aria-labelledby="journalTab" tabindex="0" hidden>
+      <div class="journal-heading">
+        <div>
+          <p class="dash-kicker">India, in your own words</p>
+          <h1>Your travel journal</h1>
+          <p>Keep the small details, the favorite corners, and the moments you want to remember.</p>
+        </div>
+        <span class="journal-count" id="journalCount" aria-live="polite">0 saved memories</span>
+      </div>
+      <form class="journal-compose" id="journalForm">
+        <div class="journal-fields">
+          <h2>Save a memory</h2>
+          <label class="field-label" for="journalTitle">Memory title
+            <input id="journalTitle" name="title" maxlength="80" placeholder="A morning in the old city" required>
+          </label>
+          <div class="journal-two-fields">
+            <label class="field-label" for="journalPlace">Place in India
+              <input id="journalPlace" name="place" maxlength="80" placeholder="Jaipur, Rajasthan" required>
+            </label>
+            <label class="field-label" for="journalDate">Travel date
+              <input id="journalDate" name="date" type="date" required>
+            </label>
+          </div>
+          <div>
+            <span class="rating-label" id="ratingLabel">Your rating</span>
+            <div class="rating-control" id="ratingControl" role="group" aria-labelledby="ratingLabel">
+              <button class="rating-star is-filled" type="button" data-rating="1" aria-label="Rate 1 out of 5" aria-pressed="false">★</button>
+              <button class="rating-star is-filled" type="button" data-rating="2" aria-label="Rate 2 out of 5" aria-pressed="false">★</button>
+              <button class="rating-star is-filled" type="button" data-rating="3" aria-label="Rate 3 out of 5" aria-pressed="false">★</button>
+              <button class="rating-star is-filled" type="button" data-rating="4" aria-label="Rate 4 out of 5" aria-pressed="false">★</button>
+              <button class="rating-star is-filled" type="button" data-rating="5" aria-label="Rate 5 out of 5" aria-pressed="true">★</button>
+            </div>
+          </div>
+          <label class="field-label" for="journalReview">Your review
+            <textarea id="journalReview" name="review" maxlength="2000" placeholder="What did you notice, taste, or feel?" required></textarea>
+          </label>
+        </div>
+        <div class="journal-fields">
+          <h2>Photo stickers</h2>
+          <div class="photo-dropzone">
+            <strong>Little snapshots, kept close.</strong>
+            <span>Choose up to 3 photos for this memory.</span>
+            <input class="photo-picker" id="journalPhotos" type="file" accept="image/*" multiple aria-label="Choose up to three photos">
+            <label class="photo-pick-button" for="journalPhotos">＋ Add photos</label>
+          </div>
+          <div class="sticker-tray" id="stickerTray" aria-live="polite"></div>
+          <p class="journal-status" id="journalStatus" role="status" aria-live="polite"></p>
+          <button class="save-memory" type="submit">Save to my journal <span aria-hidden="true">→</span></button>
+        </div>
+      </form>
+      <div class="journal-list-heading">
+        <h2>Travel memories</h2>
+        <span>Saved on this device</span>
+      </div>
+      <div class="journal-list" id="journalList" aria-live="polite"></div>
+    </section>
+  </section>
+
+  <script>
+    const destinations = [
+      { title: "Taj Mahal, Agra", category: "historical", type: "Historical · Uttar Pradesh", description: "See the marble mausoleum at sunrise, then explore Agra's Mughal-era landmarks.", image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80", alt: "The Taj Mahal in Agra, India", link: "https://en.wikipedia.org/wiki/Taj_Mahal" },
+      { title: "Hampi, Karnataka", category: "historical", type: "Historical · Karnataka", description: "Wander through a vast landscape of temple ruins and sculpted stone.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Hampi,_India,_View_of_Hampi_Bazaar_from_Matanga_Hill.jpg?width=900", alt: "Historic stone temples and boulders in Hampi", link: "https://en.wikipedia.org/wiki/Hampi" },
+      { title: "Jaipur, Rajasthan", category: "historical", type: "Historical · Rajasthan", description: "Explore the Pink City's palaces, observatory, and rose-colored old streets.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Nahargarh_080.jpg?width=900", alt: "Nahargarh Fort overlooking Jaipur", link: "https://en.wikipedia.org/wiki/Jaipur" },
+      { title: "Jaisalmer Fort, Rajasthan", category: "historical", type: "Historical · Rajasthan", description: "Walk the golden sandstone ramparts of a desert fort where people still live.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jaisalmer_Fort.jpg?width=900", alt: "Jaisalmer Fort rising above the desert city", link: "https://en.wikipedia.org/wiki/Jaisalmer_Fort" },
+      { title: "Konark Sun Temple, Odisha", category: "historical", type: "Historical · Odisha", description: "Discover the carved stone chariot and extraordinary architecture at Konark.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Konark_Sun_Temple_Front_view.jpg?width=900", alt: "Front view of the Konark Sun Temple", link: "https://en.wikipedia.org/wiki/Konark_Sun_Temple" },
+      { title: "Varanasi, Uttar Pradesh", category: "spiritual", type: "Spiritual · Uttar Pradesh", description: "Meet the dawn along the Ganges in one of India's oldest living cities.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/DashashwamedhGhat-Varanasi_India-Andres_Larin.jpg?width=900", alt: "Dashashwamedh Ghat and the Ganges in Varanasi", link: "https://en.wikipedia.org/wiki/Varanasi" },
+      { title: "Amritsar, Punjab", category: "spiritual", type: "Spiritual · Punjab", description: "Visit the Golden Temple, a place of welcome, reflection, and community.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Temple,_Amritsar_03.jpg?width=900", alt: "Golden Temple complex in Amritsar", link: "https://en.wikipedia.org/wiki/Golden_Temple" },
+      { title: "Bodh Gaya, Bihar", category: "spiritual", type: "Spiritual · Bihar", description: "Spend a quiet moment at the Buddhist pilgrimage site associated with enlightenment.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Sujata_Stupa.jpg?width=900", alt: "Sujata Stupa at the Buddhist pilgrimage site of Bodh Gaya", link: "https://en.wikipedia.org/wiki/Bodh_Gaya" },
+      { title: "Rishikesh, Uttarakhand", category: "spiritual", type: "Spiritual · Uttarakhand", description: "Follow the Ganges past riverside temples, ashrams, and evening prayers.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Ghats_by_the_River_Ganga,_Rishikesh.jpg?width=900", alt: "Riverside temples and ghats along the Ganges in Rishikesh", link: "https://en.wikipedia.org/wiki/Rishikesh" },
+      { title: "Tirumala, Andhra Pradesh", category: "spiritual", type: "Spiritual · Andhra Pradesh", description: "Visit the hilltop Venkateswara Temple amid the forested Seshachalam Hills.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Sri_Venkateswara_Swamy_Temple_in_Tirumala_in_Chittoor_district,Andhra_Pradesh.jpg?width=900", alt: "Sri Venkateswara Temple in Tirumala", link: "https://en.wikipedia.org/wiki/Tirumala_Venkateswara_Temple" },
+      { title: "Ladakh", category: "mountains", type: "Mountains · Ladakh", description: "Follow high-altitude roads between stark peaks, monasteries, and clear skies.", image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80", alt: "Snow-capped peaks in the Indian Himalayas", link: "https://en.wikipedia.org/wiki/Ladakh" },
+      { title: "Spiti Valley, Himachal Pradesh", category: "mountains", type: "Mountains · Himachal Pradesh", description: "Take the long road through remote villages and dramatic Himalayan valleys.", image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80", alt: "High mountain landscape in Himachal Pradesh", link: "https://en.wikipedia.org/wiki/Spiti_Valley" },
+      { title: "Gulmarg, Jammu and Kashmir", category: "mountains", type: "Mountains · Jammu and Kashmir", description: "Ride into alpine meadows and snow country in the Pir Panjal range.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Gulmarg_Gondola,_Cable_Car.JPG?width=900", alt: "Gondola lift in the mountain landscape of Gulmarg", link: "https://en.wikipedia.org/wiki/Gulmarg" },
+      { title: "Darjeeling, West Bengal", category: "mountains", type: "Mountains · West Bengal", description: "Take the toy train through tea country beneath the Eastern Himalayas.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Darjeeling_Hills.jpg?width=900", alt: "Darjeeling town and the surrounding Himalayan hills", link: "https://en.wikipedia.org/wiki/Darjeeling" },
+      { title: "Nanda Devi, Uttarakhand", category: "mountains", type: "Mountains · Uttarakhand", description: "Admire the sacred Himalayan peak from viewpoints outside its protected core.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Nanda_Devi_from_Kausani.JPG?width=900", alt: "Nanda Devi mountain viewed from Kausani", link: "https://en.wikipedia.org/wiki/Nanda_Devi" },
+      { title: "Kalsubai Peak, Maharashtra", category: "mountains", type: "Trek · Maharashtra", description: "Take the one-day hike from Bari to the highest peak in Maharashtra.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kalasubai_steps.jpg?width=900", alt: "Stone steps climbing toward Kalsubai Peak", link: "https://en.wikipedia.org/wiki/Kalsubai" },
+      { title: "Rajgad Fort, Maharashtra", category: "mountains", type: "Trek · Maharashtra", description: "Explore the ridgelines and ramparts of the Maratha Empire's first capital.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Rajgad_Fort.jpg?width=900", alt: "Fort bastion on Rajgad in the Sahyadri range", link: "https://en.wikipedia.org/wiki/Rajgad" },
+      { title: "Lohagad Fort, Maharashtra", category: "mountains", type: "Trek · Maharashtra", description: "Climb to the hill fort's old gateways and the ridge known as Vinchukada.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Lohagad_fort.jpg?width=900", alt: "Lohagad Fort among the Western Ghats", link: "https://en.wikipedia.org/wiki/Lohagad" },
+      { title: "Harishchandragad, Maharashtra", category: "mountains", type: "Trek · Maharashtra", description: "Hike to Konkan Kada for sweeping cliff-edge views across the Sahyadris.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Harishchandragad_Konkan_Kada.jpg?width=900", alt: "Panoramic Konkan Kada cliff at Harishchandragad", link: "https://en.wikipedia.org/wiki/Harishchandragad" },
+      { title: "Torna Fort, Maharashtra", category: "mountains", type: "Trek · Maharashtra", description: "Take the steep trail to Pune district's highest hill fort in the Sahyadris.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Sharp_torna.jpg?width=900", alt: "Torna Fort's Zunjar Machi fortification", link: "https://en.wikipedia.org/wiki/Torna_Fort" },
+      { title: "Goa", category: "beaches", type: "Beaches · Goa", description: "Pair quiet coastal mornings with seafood, laterite lanes, and sunset swims.", image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80", alt: "Sea washing onto a sandy beach in Goa", link: "https://en.wikipedia.org/wiki/Goa" },
+      { title: "Andaman Islands", category: "beaches", type: "Beaches · Andaman and Nicobar Islands", description: "Find clear water, coral reefs, and island paths in the Bay of Bengal.", image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80", alt: "Clear tropical water along the Andaman coast", link: "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands" },
+      { title: "Gokarna, Karnataka", category: "beaches", type: "Beaches · Karnataka", description: "Link a laid-back beach stay with coastal trails and the old temple town.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Gokarna.JPG?width=900", alt: "Gokarna township on the Karnataka coast", link: "https://en.wikipedia.org/wiki/Gokarna,_Karnataka" },
+      { title: "Puri, Odisha", category: "beaches", type: "Beaches · Odisha", description: "Catch sunrise over the Bay of Bengal on Puri's broad sandy shoreline.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Sunrise_at_Puri_Sea_Beach.jpg?width=900", alt: "Sunrise over Puri Sea Beach", link: "https://en.wikipedia.org/wiki/Puri_(city)" },
+      { title: "Kovalam, Kerala", category: "beaches", type: "Beaches · Kerala", description: "Spend a slow afternoon between the lighthouse, crescent beaches, and sea.", image: "https://commons.wikimedia.org/wiki/Special:FilePath/Kovalam_Beach_(TUI)_-_2016.JPG?width=900", alt: "Kovalam Beach beside the Arabian Sea", link: "https://en.wikipedia.org/wiki/Kovalam" }
+    ];
+
+    const categoryNames = {
+      all: "Choose your next journey",
+      historical: "Walk through history",
+      spiritual: "Find a moment of stillness",
+      mountains: "Take the high road",
+      beaches: "Follow the shoreline"
+    };
+
+    const loginView = document.querySelector("#loginView");
+    const dashboardView = document.querySelector("#dashboardView");
+    const destinationGrid = document.querySelector("#destinationGrid");
+    const dashboardTitle = document.querySelector("#dashboardTitle");
+    const resultsCount = document.querySelector("#resultsCount");
+    const searchInput = document.querySelector("#destinationSearch");
+    const discoverPanel = document.querySelector("#discoverPanel");
+    const journalPanel = document.querySelector("#journalPanel");
+    const journalForm = document.querySelector("#journalForm");
+    const photoInput = document.querySelector("#journalPhotos");
+    let journalEntries = [];
+    try {
+      journalEntries = JSON.parse(localStorage.getItem("wayfarer-journal") || "[]");
+      if (!Array.isArray(journalEntries)) journalEntries = [];
+    } catch {
+      journalEntries = [];
+    }
+    let activeCategory = "all";
+    let activeTab = "discover";
+    let selectedRating = 5;
+    let draftPhotos = [];
+
+    function setDashboardTab(tab) {
+      activeTab = tab;
+      const showingJournal = tab === "journal";
+      discoverPanel.hidden = showingJournal;
+      journalPanel.hidden = !showingJournal;
+      document.querySelector("#discoverTab").setAttribute("aria-selected", String(!showingJournal));
+      document.querySelector("#journalTab").setAttribute("aria-selected", String(showingJournal));
+      document.querySelector(".search-field").hidden = showingJournal;
+      if (showingJournal) renderJournal();
+    }
+
+    function saveJournalEntries() {
+      try {
+        localStorage.setItem("wayfarer-journal", JSON.stringify(journalEntries));
+        return true;
+      } catch {
+        return false;
+      }
+    }
+
+    function makeSticker(photo, index, removable, onRemove) {
+      const sticker = document.createElement("div");
+      sticker.className = "photo-sticker";
+      const image = document.createElement("img");
+      image.src = photo.dataUrl;
+      image.alt = photo.name || "Travel photo sticker";
+      sticker.append(image);
+      if (removable) {
+        const removeButton = document.createElement("button");
+        removeButton.className = "sticker-remove";
+        removeButton.type = "button";
+        removeButton.textContent = "×";
+        removeButton.setAttribute("aria-label", `Remove photo ${index + 1}`);
+        removeButton.addEventListener("click", onRemove);
+        sticker.append(removeButton);
+      }
+      return sticker;
+    }
+
+    function renderDraftPhotos() {
+      const tray = document.querySelector("#stickerTray");
+      tray.replaceChildren(...draftPhotos.map((photo, index) => makeSticker(photo, index, true, () => {
+        draftPhotos.splice(index, 1);
+        renderDraftPhotos();
+      })));
+    }
+
+    function renderJournal() {
+      const journalList = document.querySelector("#journalList");
+      document.querySelector("#journalCount").textContent = `${journalEntries.length} ${journalEntries.length === 1 ? "saved memory" : "saved memories"}`;
+      journalList.replaceChildren();
+      if (journalEntries.length === 0) {
+        const emptyState = document.createElement("p");
+        emptyState.className = "journal-empty";
+        emptyState.textContent = "Your travel memories will appear here.";
+        journalList.append(emptyState);
+        return;
+      }
+
+      journalEntries.forEach((entry) => {
+        const card = document.createElement("article");
+        card.className = "journal-entry";
+        const top = document.createElement("div");
+        top.className = "journal-entry-top";
+        const titleGroup = document.createElement("div");
+        const title = document.createElement("h3");
+        title.textContent = entry.title;
+        const metadata = document.createElement("p");
+        metadata.className = "journal-entry-meta";
+        const entryDate = new Date(`${entry.date}T12:00:00`);
+        const formattedDate = Number.isNaN(entryDate.getTime()) ? entry.date : entryDate.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+        metadata.textContent = `${entry.place} · ${formattedDate}`;
+        titleGroup.append(title, metadata);
+        const rating = document.createElement("span");
+        rating.className = "journal-entry-rating";
+        rating.setAttribute("aria-label", `Rated ${entry.rating} out of 5`);
+        rating.textContent = `${"★".repeat(entry.rating)}${"☆".repeat(5 - entry.rating)}`;
+        top.append(titleGroup, rating);
+        const review = document.createElement("p");
+        review.className = "journal-review";
+        review.textContent = entry.review;
+        card.append(top, review);
+
+        if (Array.isArray(entry.photos) && entry.photos.length) {
+          const stickers = document.createElement("div");
+          stickers.className = "journal-entry-stickers";
+          entry.photos.forEach((photo, index) => {
+            if (photo.dataUrl?.startsWith("data:image/")) stickers.append(makeSticker(photo, index, false));
+          });
+          card.append(stickers);
+        }
+
+        const deleteButton = document.createElement("button");
+        deleteButton.className = "delete-entry";
+        deleteButton.type = "button";
+        deleteButton.dataset.deleteEntry = entry.id;
+        deleteButton.setAttribute("aria-label", `Delete ${entry.title}`);
+        deleteButton.textContent = "Delete memory";
+        card.append(deleteButton);
+        journalList.append(card);
+      });
+    }
+
+    function compressPhoto(file) {
+      return new Promise((resolve, reject) => {
+        if (!file.type.startsWith("image/")) {
+          reject(new Error("Choose an image file."));
+          return;
+        }
+        if (file.size > 12000000) {
+          reject(new Error("Choose photos smaller than 12 MB."));
+          return;
+        }
+        const reader = new FileReader();
+        reader.onerror = () => reject(new Error("This photo could not be read."));
+        reader.onload = () => {
+          const image = new Image();
+          image.onerror = () => reject(new Error("This photo could not be opened."));
+          image.onload = () => {
+            const scale = Math.min(1, 1200 / Math.max(image.width, image.height));
+            const canvas = document.createElement("canvas");
+            canvas.width = Math.round(image.width * scale);
+            canvas.height = Math.round(image.height * scale);
+            const context = canvas.getContext("2d");
+            if (!context) {
+              reject(new Error("Photo processing is unavailable in this browser."));
+              return;
+            }
+            context.fillStyle = "#ffffff";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+            context.drawImage(image, 0, 0, canvas.width, canvas.height);
+            resolve({ name: file.name.slice(0, 80), dataUrl: canvas.toDataURL("image/jpeg", 0.78) });
+          };
+          image.src = reader.result;
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function updateRating(rating) {
+      selectedRating = rating;
+      document.querySelectorAll(".rating-star").forEach((button) => {
+        const isSelected = Number(button.dataset.rating) === rating;
+        button.classList.toggle("is-filled", Number(button.dataset.rating) <= rating);
+        button.setAttribute("aria-pressed", String(isSelected));
+      });
+    }
+
+    function setJournalDateToToday() {
+      const today = new Date();
+      today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+      document.querySelector("#journalDate").value = today.toISOString().slice(0, 10);
+    }
+
+    setJournalDateToToday();
+
+    function renderDestinations() {
+      const query = searchInput.value.trim().toLowerCase();
+      const visibleDestinations = destinations.filter((destination) => {
+        const matchesCategory = activeCategory === "all" || destination.category === activeCategory;
+        const searchableText = `${destination.title} ${destination.type} ${destination.description}`.toLowerCase();
+        return matchesCategory && searchableText.includes(query);
+      });
+
+      dashboardTitle.textContent = categoryNames[activeCategory];
+      resultsCount.textContent = `${visibleDestinations.length} ${visibleDestinations.length === 1 ? "destination" : "destinations"}`;
+      destinationGrid.innerHTML = visibleDestinations.length
+        ? visibleDestinations.map((destination) => `
+          <article class="destination-card">
+            <img class="destination-image" src="${destination.image}" alt="${destination.alt}" loading="lazy">
+            <div class="destination-info">
+              <p class="destination-type">${destination.type}</p>
+              <h2>${destination.title}</h2>
+              <p>${destination.description}</p>
+              <a class="destination-link" href="${destination.link}" target="_blank" rel="noopener noreferrer">Explore on Wikipedia <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>`).join("")
+        : '<p class="empty-results">No journeys match that search. Try another place or category.</p>';
+    }
+
+    function showDashboard(name) {
+      loginView.hidden = true;
+      dashboardView.hidden = false;
+      document.querySelector("#profileName").textContent = name;
+      document.querySelector("#profileInitial").textContent = name.charAt(0).toUpperCase();
+      renderDestinations();
+      renderJournal();
+    }
+
+    document.querySelector("#loginForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const email = document.querySelector("#email").value.trim();
+      const password = document.querySelector("#password").value;
+      if (!email || !password) {
+        document.querySelector("#authMessage").textContent = "Enter your email and password to continue.";
+        return;
+      }
+      const name = email.split("@")[0].replace(/[._-]+/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase()) || "Wayfarer";
+      sessionStorage.setItem("wayfarer-demo-name", name);
+      document.querySelector("#authMessage").textContent = "";
+      showDashboard(name);
+    });
+
+    document.querySelector("#categoryNav").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-category]");
+      if (!button) return;
+      activeCategory = button.dataset.category;
+      document.querySelectorAll(".category-button").forEach((categoryButton) => {
+        categoryButton.setAttribute("aria-pressed", String(categoryButton === button));
+      });
+      renderDestinations();
+    });
+
+    document.querySelector("#discoverTab").addEventListener("click", () => setDashboardTab("discover"));
+    document.querySelector("#journalTab").addEventListener("click", () => setDashboardTab("journal"));
+
+    document.querySelector("#ratingControl").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-rating]");
+      if (button) updateRating(Number(button.dataset.rating));
+    });
+
+    photoInput.addEventListener("change", async () => {
+      document.querySelector("#journalStatus").textContent = "";
+      const selectedFiles = Array.from(photoInput.files);
+      if (draftPhotos.length + selectedFiles.length > 3) {
+        document.querySelector("#journalStatus").textContent = "Choose no more than three photos.";
+        photoInput.value = "";
+        return;
+      }
+      try {
+        draftPhotos.push(...await Promise.all(selectedFiles.map(compressPhoto)));
+        renderDraftPhotos();
+        document.querySelector("#journalStatus").textContent = draftPhotos.length ? `${draftPhotos.length} photo sticker${draftPhotos.length === 1 ? "" : "s"} ready.` : "";
+      } catch (error) {
+        document.querySelector("#journalStatus").textContent = error.message;
+      }
+      photoInput.value = "";
+    });
+
+    journalForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const saveButton = journalForm.querySelector(".save-memory");
+      const status = document.querySelector("#journalStatus");
+      saveButton.disabled = true;
+      status.textContent = "Saving memory...";
+      const formData = new FormData(journalForm);
+      const entry = {
+        id: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
+        title: String(formData.get("title")).trim(),
+        place: String(formData.get("place")).trim(),
+        date: String(formData.get("date")),
+        rating: selectedRating,
+        review: String(formData.get("review")).trim(),
+        photos: draftPhotos
+      };
+      journalEntries.unshift(entry);
+      if (!saveJournalEntries()) {
+        journalEntries.shift();
+        status.textContent = "This device is out of storage. Remove a photo or delete an older memory, then try again.";
+        saveButton.disabled = false;
+        return;
+      }
+      journalForm.reset();
+      draftPhotos = [];
+      renderDraftPhotos();
+      updateRating(5);
+      setJournalDateToToday();
+      status.textContent = "Memory saved to your journal.";
+      renderJournal();
+      saveButton.disabled = false;
+    });
+
+    document.querySelector("#journalList").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-delete-entry]");
+      if (!button) return;
+      const previousEntries = journalEntries;
+      journalEntries = journalEntries.filter((entry) => entry.id !== button.dataset.deleteEntry);
+      if (!saveJournalEntries()) {
+        journalEntries = previousEntries;
+        document.querySelector("#journalStatus").textContent = "This memory could not be deleted from this device.";
+        return;
+      }
+      renderJournal();
+    });
+
+    searchInput.addEventListener("input", renderDestinations);
+    document.querySelector("#signOutButton").addEventListener("click", () => {
+      sessionStorage.removeItem("wayfarer-demo-name");
+      setDashboardTab("discover");
+      dashboardView.hidden = true;
+      loginView.hidden = false;
+      document.querySelector("#loginForm").reset();
+      searchInput.value = "";
+      activeCategory = "all";
+      document.querySelectorAll(".category-button").forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.category === "all"));
+      });
+    });
+
+    const savedName = sessionStorage.getItem("wayfarer-demo-name");
+    if (savedName) showDashboard(savedName);
+  </script>
+</body>
+</html>
